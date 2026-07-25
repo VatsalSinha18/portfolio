@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SoilVital | Precision Soil Health &amp; Agritech Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:wght@500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#3f6653",
+                        "surface-container-highest": "#e3e2e0",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdbd1",
+                        "on-primary": "#ffffff",
+                        "secondary": "#2552ca",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#414844",
+                        "surface-cream": "#FCFBF8",
+                        "secondary-fixed": "#dce1ff",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#002114",
+                        "surface-bright": "#faf9f6",
+                        "soil-clay": "#7D5A50",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#52342b",
+                        "secondary-container": "#446ce4",
+                        "inverse-surface": "#2f312f",
+                        "surface-container-high": "#e9e8e5",
+                        "primary-fixed": "#c1ecd4",
+                        "on-tertiary-fixed": "#2d150e",
+                        "outline": "#717973",
+                        "on-primary-fixed-variant": "#274e3d",
+                        "surface": "#faf9f6",
+                        "inverse-on-surface": "#f1f1ee",
+                        "inverse-primary": "#a5d0b9",
+                        "secondary-fixed-dim": "#b6c4ff",
+                        "tertiary": "#391f17",
+                        "outline-variant": "#c1c8c2",
+                        "tertiary-fixed-dim": "#e9bcb0",
+                        "on-tertiary-fixed-variant": "#5f3f36",
+                        "error-container": "#ffdad6",
+                        "primary": "#012d1d",
+                        "data-orange": "#FF6B00",
+                        "earth-deep": "#1B4332",
+                        "on-secondary-container": "#fffbff",
+                        "tech-blue": "#4169E1",
+                        "surface-container-low": "#f4f3f1",
+                        "primary-fixed-dim": "#a5d0b9",
+                        "surface-dim": "#dbdad7",
+                        "on-background": "#1a1c1a",
+                        "surface-container": "#efeeeb",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#c69c91",
+                        "on-surface": "#1a1c1a",
+                        "on-primary-container": "#86af99",
+                        "status-critical": "#FF0080",
+                        "surface-variant": "#e3e2e0",
+                        "primary-container": "#1b4332",
+                        "background": "#faf9f6",
+                        "on-secondary-fixed": "#00164e",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#003baf"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "max-width": "1280px",
+                        "margin-desktop": "64px",
+                        "base": "4px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["JetBrains Mono"],
+                        "body-md": ["IBM Plex Sans"],
+                        "headline-md": ["IBM Plex Serif"],
+                        "headline-xl-mobile": ["IBM Plex Serif"],
+                        "data-display": ["JetBrains Mono"],
+                        "body-lg": ["IBM Plex Sans"],
+                        "headline-lg": ["IBM Plex Serif"],
+                        "headline-xl": ["IBM Plex Serif"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "data-display": ["20px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+                    },
+                    "animation": {
+                        "float": "float 3s ease-in-out infinite",
+                        "shimmer": "shimmer 2s linear infinite",
+                        "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite"
+                    },
+                    "keyframes": {
+                        "float": {
+                            "0%, 100%": { transform: "translateY(0px)" },
+                            "50%": { transform: "translateY(-10px)" }
+                        },
+                        "shimmer": {
+                            "0%": { backgroundPosition: "-200% 0" },
+                            "100%": { backgroundPosition: "200% 0" }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(1, 45, 29, 0.9) 0%, rgba(1, 45, 29, 0.4) 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .btn-shimmer {
+            background: linear-gradient(90deg, #FF6B00 0%, #ff8c3a 25%, #FF6B00 50%, #ff8c3a 75%, #FF6B00 100%);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite linear;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal, .animate-float, .btn-shimmer, .animate-pulse-slow, .transition-all {
+                animation: none !important;
+                transition: none !important;
+                transform: none !important;
+                opacity: 1 !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed-dim selection:text-primary overflow-x-hidden">
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant transition-all duration-300 ease-in-out">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-max-width mx-auto">
+<div class="flex items-center gap-2 group cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform duration-300 ease-in-out" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">SoilVital</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md transition-all duration-300 ease-in-out" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300 ease-in-out font-body-md" href="#services">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300 ease-in-out font-body-md" href="#success">Success Stories</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300 ease-in-out font-body-md" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary hover:scale-110 transition-all duration-300 ease-in-out">sensors</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary hover:scale-110 transition-all duration-300 ease-in-out">account_circle</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-body-md font-bold hover:bg-primary-container hover:shadow-lg transition-all duration-300 ease-in-out">Book Soil Test</button>
+</div>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[85vh] min-h-[600px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Soil Analysis" class="w-full h-full object-cover scale-110" id="hero-bg" src="https://lh3.googleusercontent.com/aida/AP1WRLuow2qRYZls7N1CGZWEQ0Q-IXaEAtYlPVstAqe6NSN4t0l-4Tku8ng7vqKDK4iNXfuov4bMc2fI97saFljqEUTQXhMRtUWzkqNbSVBhsYnSwJcBMeJJ3_HddPUhPxEyBIlGhbP0lTpT7M2eKGNk8dIbCHRBNyyV1dOM-JlVGKP6o8aSY83wtJP3hP466sruBKHR8EzUTPyG2fZtIlZ01psvmTQzOsVQWr12oDuT5cZfQD1sHXYd8H0Q"/>
+<div class="absolute inset-0 hero-overlay"></div>
+</div>
+<div class="relative z-10 w-full px-margin-desktop max-w-max-width mx-auto">
+<div class="max-w-2xl text-on-primary reveal active">
+<span class="inline-block px-4 py-1 bg-data-orange text-white font-label-sm rounded-full mb-6 uppercase tracking-widest animate-pulse-slow">Precision Agriculture 2.0</span>
+<h1 class="font-headline-xl text-headline-xl mb-6 animate-float">Know Your Soil.<br/>Grow Smarter.<br/>Earn More.</h1>
+<p class="font-body-lg text-body-lg mb-10 opacity-90 leading-relaxed transition-all duration-300 ease-in-out">
+                    SoilVital combines IoT sensors and precision lab testing to provide actionable insights for your farm. Optimize yields by up to 40% with data-driven nutrition management.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="btn-shimmer text-white px-8 py-4 rounded-xl font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-in-out flex items-center gap-2" onclick="toggleModal('lead-popup')">
+                        Book Soil Test <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="glass-card hover:bg-white/10 hover:-translate-y-1 text-white px-8 py-4 rounded-xl font-bold transition-all duration-300 ease-in-out">
+                        Get Free Consultation
+                    </button>
+</div>
+<div class="mt-8">
+<a class="text-on-primary/80 hover:text-on-primary underline font-body-md transition-colors duration-300 ease-in-out" href="#">Request a Custom Quotation</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Metrics Grid (Trust) -->
+<section class="py-12 bg-surface-cream border-y border-outline-variant reveal">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+<div class="p-6 hover:scale-105 transition-transform duration-300 ease-in-out">
+<div class="font-data-display text-headline-lg text-primary mb-1">10,000+</div>
+<div class="font-label-sm text-on-surface-variant uppercase tracking-wider">Soil Tests Completed</div>
+</div>
+<div class="p-6 hover:scale-105 transition-transform duration-300 ease-in-out">
+<div class="font-data-display text-headline-lg text-primary mb-1">25,000+</div>
+<div class="font-label-sm text-on-surface-variant uppercase tracking-wider">Acres Optimized</div>
+</div>
+<div class="p-6 hover:scale-105 transition-transform duration-300 ease-in-out">
+<div class="font-data-display text-headline-lg text-primary mb-1">15%</div>
+<div class="font-label-sm text-on-surface-variant uppercase tracking-wider">Fertilizer Cost Savings</div>
+</div>
+<div class="p-6 hover:scale-105 transition-transform duration-300 ease-in-out">
+<div class="font-data-display text-headline-lg text-primary mb-1">4.9/5</div>
+<div class="font-label-sm text-on-surface-variant uppercase tracking-wider">Farmer Trust Score</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services (Bento Grid) -->
+<section class="py-24 max-w-max-width mx-auto px-margin-desktop reveal" id="services">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Precision Services</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl">Tailored scientific solutions for modern agronomists and heritage farmers alike.</p>
+</div>
+<div class="bento-grid">
+<!-- Soil Testing -->
+<div class="col-span-12 md:col-span-8 group relative overflow-hidden rounded-xl h-[400px] bg-primary-container cursor-pointer hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(1,45,29,0.3)] transition-all duration-300 ease-in-out">
+<img alt="Soil Testing" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700 ease-in-out" src="https://lh3.googleusercontent.com/aida/AP1WRLv5T-P1fvbFENPl4W7Xhj1g53cz39VZcUCgfy0dPh9PMOGbX1wPow1ZfdJNsmboEfNa7oY4XtKUy4bo4Wi9-bUMEPpQ_BqNlY-r2FKIQvqDxboaxNt8rc7LcPKKypZSX_fAlWn3i4A7gPG7XD9MX5MTz33EFOi3WOqVk1d9lZgxcfc1_zOlycpg6rAOPls7pvu_9L587D4g-KWVeI_NM5gfj9NIUShM0q70yHXiEiBevyyduxzEVSgehw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-10 flex flex-col justify-end text-white">
+<span class="material-symbols-outlined text-4xl mb-4 group-hover:scale-125 transition-transform duration-300" style="font-variation-settings: 'FILL' 1;">science</span>
+<h3 class="font-headline-md text-headline-md mb-2">Comprehensive Soil Testing</h3>
+<p class="font-body-md opacity-80 max-w-md">Detailed analysis of 16+ parameters including macro &amp; micro nutrients, pH, and organic carbon.</p>
+<button class="mt-6 flex items-center gap-2 text-data-orange font-bold hover:translate-x-2 transition-transform duration-300">Learn More <span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<!-- Biofertilizers -->
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-xl h-[400px] bg-soil-clay cursor-pointer hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(125,90,80,0.3)] transition-all duration-300 ease-in-out">
+<img alt="Biofertilizers" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700 ease-in-out" src="https://lh3.googleusercontent.com/aida/AP1WRLsw_iAlBWgAC6ha6MdlOKDf2sqt-K93mKTPyGgtskQEUIiiomeYLrvD76lCMtMnh7j6UBKHUSn2Aa2X1tIOfI-dUFR4FntKOMfR5m254cmQe3eN1jx_KrEFsRtLqekjwiWEQxyF2XJ85DBP9Cffdk9C3rns0ix5eOPKMKOvM7H8ejLhKoqrqKDEgCSaX16p13d0IukvuL9ARYpdYcBLppEweWf1JNl1KeZevFRAQNDHXS2z8Z_dt1ah0A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-10 flex flex-col justify-end text-white">
+<span class="material-symbols-outlined text-4xl mb-4 group-hover:scale-125 transition-transform duration-300">compost</span>
+<h3 class="font-headline-md text-headline-md mb-2">Organic Biofertilizers</h3>
+<p class="font-body-md opacity-80">Custom formulations to rejuvenate soil microbiome naturally.</p>
+</div>
+</div>
+<!-- Crop Recommendation -->
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-xl h-[400px] bg-tech-blue cursor-pointer hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(65,105,225,0.3)] transition-all duration-300 ease-in-out">
+<img alt="Crop Recommendation" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700 ease-in-out" src="https://lh3.googleusercontent.com/aida/AP1WRLsPIyDweMvVuPVKhCk5QARK2Ee0_2Ma7UPmo8pifOAubYhSFSv2fTVmj4_2lxHXMaT77FrIw8Y5eIFfGX_XhY3IDCvbxIoDPg6kPIL92ktJYvqFQtNA9THuT_xke3S0Oz5HQSJ34Q0_sAXhS6FKFMBhDsf1IDCJrqbUIco7_u7Uz8dPe3_VaV_PefedEmWylvCzmN6YNIaykwq1xLF-1P_dVZxSNijkV9CyRrKFCsT1nibf7GZWOH8INA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-10 flex flex-col justify-end text-white">
+<span class="material-symbols-outlined text-4xl mb-4 group-hover:scale-125 transition-transform duration-300">psychology_alt</span>
+<h3 class="font-headline-md text-headline-md mb-2">Smart Crop Selection</h3>
+<p class="font-body-md opacity-80">AI-powered recommendations based on your specific soil profile and climate data.</p>
+</div>
+</div>
+<!-- Farm Consultancy -->
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-xl h-[400px] bg-earth-deep cursor-pointer hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(27,67,50,0.3)] transition-all duration-300 ease-in-out">
+<img alt="Consultancy" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700 ease-in-out" src="https://lh3.googleusercontent.com/aida/AP1WRLsyDF6q_uk-L6HAB-lRAPleJQZQVwgvoj4J3KkKE7wU7fTjsAqFg1vuF9STDjX0yKDnNh2sTb_UHH3gnx5lRFG8frVTnf2JxnZTtH2NQzttkHJ7mbzdw43TQYEb1PzL79CQaSjpflM1G5kskyThv3RDPLFyxxuPv7ppYTzn_97cQ3IvzXcuXJWB1bPmJaTDh8u6Hgq62bYET_r36my7pxNWLPyzR6BlvMIUOWke85xyZsilQZRF0eoo1A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-10 flex flex-col justify-end text-white">
+<span class="material-symbols-outlined text-4xl mb-4 group-hover:scale-125 transition-transform duration-300">forum</span>
+<h3 class="font-headline-md text-headline-md mb-2">Expert Consultancy</h3>
+<p class="font-body-md opacity-80">One-on-one guidance from certified agronomists to solve local yield issues.</p>
+</div>
+</div>
+<!-- Supplier Network -->
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-xl h-[400px] bg-surface-container-highest cursor-pointer hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(227,226,224,0.5)] transition-all duration-300 ease-in-out">
+<img alt="Marketplace" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700 ease-in-out" src="https://lh3.googleusercontent.com/aida/AP1WRLuhQtoK4CIsHGlbnHmXQJHM9VeWlec7O1L99El8EzmGr9hXJnOWAWdFIwg9pZFQIUlnR8D7JSnS7d6bzU3sPs2IJ7yRMdvRpIML57xKHlsrIIeGZxPHjmp3jPT3VaDKycgv-h73W5J-ZuiHl1-564LWJz6Nk04BOgOqJXR3HV12ICzq1TBugc_ub7lw33T7VTzw2xfiuNcSwyQA1-rUMdMEEAcsFmEPoA9B_9QIlcBqniBTy2DHwSg_TQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-10 flex flex-col justify-end text-white">
+<span class="material-symbols-outlined text-4xl mb-4 group-hover:scale-125 transition-transform duration-300">hub</span>
+<h3 class="font-headline-md text-headline-md mb-2">Marketplace</h3>
+<p class="font-body-md opacity-80">Direct access to quality-vetted inputs and local farm equipment suppliers.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-24 bg-primary text-on-primary overflow-hidden reveal">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">How It Works</h2>
+<p class="font-body-lg opacity-70">From sample collection to harvest optimization in 5 simple steps.</p>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-start gap-8 relative">
+<div class="flex-1 text-center relative z-10 group cursor-default">
+<div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/20 group-hover:scale-110 group-hover:bg-white/20 transition-all duration-300">
+<span class="material-symbols-outlined text-white">event_available</span>
+</div>
+<h4 class="font-headline-md text-body-lg mb-2">1. Book Test</h4>
+<p class="text-sm opacity-60">Schedule via App or WhatsApp</p>
+</div>
+<div class="hidden md:block absolute top-8 left-[15%] w-[10%] border-t border-dashed border-white/30"></div>
+<div class="flex-1 text-center relative z-10 group cursor-default">
+<div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/20 group-hover:scale-110 group-hover:bg-white/20 transition-all duration-300">
+<span class="material-symbols-outlined text-white">location_on</span>
+</div>
+<h4 class="font-headline-md text-body-lg mb-2">2. On-Site Sampling</h4>
+<p class="text-sm opacity-60">Expert collects soil samples</p>
+</div>
+<div class="hidden md:block absolute top-8 left-[35%] w-[10%] border-t border-dashed border-white/30"></div>
+<div class="flex-1 text-center relative z-10 group cursor-default">
+<div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/20 group-hover:scale-110 group-hover:bg-white/20 transition-all duration-300">
+<span class="material-symbols-outlined text-white">biotech</span>
+</div>
+<h4 class="font-headline-md text-body-lg mb-2">3. Lab Analysis</h4>
+<p class="text-sm opacity-60">Precision testing in 48 hours</p>
+</div>
+<div class="hidden md:block absolute top-8 left-[55%] w-[10%] border-t border-dashed border-white/30"></div>
+<div class="flex-1 text-center relative z-10 group cursor-default">
+<div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/20 group-hover:scale-110 group-hover:bg-white/20 transition-all duration-300">
+<span class="material-symbols-outlined text-white">description</span>
+</div>
+<h4 class="font-headline-md text-body-lg mb-2">4. Digital Report</h4>
+<p class="text-sm opacity-60">Get insights on your phone</p>
+</div>
+<div class="hidden md:block absolute top-8 left-[75%] w-[10%] border-t border-dashed border-white/30"></div>
+<div class="flex-1 text-center relative z-10 group cursor-default">
+<div class="w-16 h-16 bg-data-orange rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-data-orange/20 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+<span class="material-symbols-outlined text-white">trending_up</span>
+</div>
+<h4 class="font-headline-md text-body-lg mb-2">5. Yield Growth</h4>
+<p class="text-sm opacity-60">Implement and watch yields soar</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Sample Report (Interactive Mockup) -->
+<section class="py-24 bg-surface overflow-hidden reveal">
+<div class="max-w-max-width mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Actionable Data, Not Just Numbers</h2>
+<p class="font-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                    Our digital reports are designed for clarity. No jargon—just clear indicators of your soil's health and precise recommendations for improvement.
+                </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3 group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform duration-300" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Dynamic NPK &amp; Micronutrient Dashboards</span>
+</li>
+<li class="flex items-start gap-3 group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform duration-300" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Optimal pH Maintenance Strategies</span>
+</li>
+<li class="flex items-start gap-3 group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform duration-300" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Crop-specific Dosage Recommendations</span>
+</li>
+</ul>
+<button class="mt-10 bg-primary text-on-primary px-8 py-3 rounded-lg font-bold hover:bg-primary-container hover:shadow-xl transition-all duration-300 ease-in-out">View Sample Report</button>
+</div>
+<div class="relative group">
+<div class="bg-white rounded-2xl shadow-2xl p-8 border border-outline-variant hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.15)] transition-all duration-500 ease-in-out">
+<div class="flex justify-between items-center mb-8">
+<div>
+<h4 class="font-headline-md text-primary">Soil Health Status</h4>
+<p class="font-label-sm text-on-surface-variant">REPORT ID: SV-2024-8839</p>
+</div>
+<div class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-sm animate-pulse">OPTIMAL</div>
+</div>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between mb-2">
+<span class="font-body-md font-bold">Nitrogen (N)</span>
+<span class="font-data-display text-primary">Medium</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="w-[65%] h-full bg-tech-blue transition-all duration-1000 ease-out delay-500 report-bar" style="width: 0;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="font-body-md font-bold">Phosphorus (P)</span>
+<span class="font-data-display text-status-critical">Low</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="w-[20%] h-full bg-status-critical transition-all duration-1000 ease-out delay-700 report-bar" style="width: 0;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="font-body-md font-bold">Potassium (K)</span>
+<span class="font-data-display text-primary">High</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="w-[90%] h-full bg-earth-deep transition-all duration-1000 ease-out delay-900 report-bar" style="width: 0;"></div>
+</div>
+</div>
+</div>
+<div class="mt-10 p-4 bg-surface-cream rounded-xl border border-outline-variant/30 hover:bg-white transition-colors duration-300">
+<div class="font-label-sm uppercase text-data-orange mb-2">Expert Recommendation</div>
+<p class="text-sm italic">"Apply 25kg/acre of Phosphorus-rich biofertilizer. Delay Nitrogen application until next cycle."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Success Stories -->
+<section class="py-24 bg-surface-cream reveal" id="success">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Farmer Success Stories</h2>
+<p class="font-body-lg text-on-surface-variant">Real results from our precision network.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="bg-white p-10 rounded-2xl border border-outline-variant flex gap-8 flex-col md:flex-row items-center md:items-start hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out cursor-default group">
+<div class="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+<img alt="Farmer Rajesh Kumar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLt12UA7ULL3ZJGTFukD1pm6iBe9CF67LYmnGwGSozubeee5XbXa5qv2DHVfkhxecxYZVIEnxnN5LIiLgdlL2jNVNpDWKkKmXhEKaZA24wwx7-kxQWWJCjwBLevuq0HtVfQX44kvRglh0UovZddqRFV19cL3jQM4eqL_AkPQ2XXC6LwuH6EMKE7n_EUlO-lmwL5DzCy9DXNScWPzMkbopUh9xJ1HfyXZsQ-GLsCOef1Bgadq69_Eqkox8w"/>
+</div>
+<div>
+<div class="flex text-data-orange mb-4">
+<span class="material-symbols-outlined group-hover:scale-125 transition-transform duration-300 delay-[50ms]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined group-hover:scale-125 transition-transform duration-300 delay-[100ms]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined group-hover:scale-125 transition-transform duration-300 delay-[150ms]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined group-hover:scale-125 transition-transform duration-300 delay-[200ms]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined group-hover:scale-125 transition-transform duration-300 delay-[250ms]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-headline-md text-xl mb-6 leading-relaxed">
+                            "SoilVital saved my paddy crop. I was over-fertilizing without knowing my soil was already rich in Nitrogen. Their lab report changed everything."
+                        </blockquote>
+<div class="font-bold text-primary">Rajesh Kumar</div>
+<div class="text-on-surface-variant text-sm">Cereal Farmer, Haryana</div>
+</div>
+</div>
+<div class="bg-white p-10 rounded-2xl border border-outline-variant flex gap-8 flex-col md:flex-row items-center md:items-start hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out cursor-default group">
+<div class="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+<img alt="Farmer Sunita Devi" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsGXIjJaNTL3wsybrkwFo74sYgYBZkemkvxCcUmeBREMQUyOdP2XnodkbWtWPl0CHK8mRsj1LgUwBfaKFKiwIamZOvx8a2HkQXvU9aHjyhJdYhJyTHlrVoiptxFZ3eRZ6KHyqqcBaifdi5pzjq41Q1OhJTl8UkfFLYNe3Vgi8srX1djt52d5lqUEYihs15BDe6GX0FCA12meyys_IwAnTnf7j9AZxB7mDHl3wJKlG4QgvU1RMhCLy3LSw"/>
+</div>
+<div>
+<div class="flex text-data-orange mb-4">
+<span class="material-symbols-outlined group-hover:scale-125 transition-transform duration-300 delay-[50ms]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined group-hover:scale-125 transition-transform duration-300 delay-[100ms]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined group-hover:scale-125 transition-transform duration-300 delay-[150ms]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined group-hover:scale-125 transition-transform duration-300 delay-[200ms]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined group-hover:scale-125 transition-transform duration-300 delay-[250ms]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-headline-md text-xl mb-6 leading-relaxed">
+                            "The consultation service is excellent. I now understand the 'why' behind every seed I plant. My yields are up by 25% this season alone."
+                        </blockquote>
+<div class="font-bold text-primary">Sunita Devi</div>
+<div class="text-on-surface-variant text-sm">Organic Vegetable Farmer</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-primary text-on-primary" id="contact">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-16 max-w-max-width mx-auto reveal">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6 group cursor-pointer">
+<span class="material-symbols-outlined text-white text-3xl group-hover:rotate-12 transition-transform duration-300" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-headline-md text-headline-md font-bold text-on-primary">SoilVital</span>
+</div>
+<p class="opacity-70 text-sm leading-relaxed mb-6">
+                Pioneering precision agriculture through science-backed soil analysis and custom bio-solutions.
+            </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-data-orange hover:scale-110 transition-all duration-300" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-data-orange hover:scale-110 transition-all duration-300" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-secondary-fixed">Services</h4>
+<ul class="space-y-4 font-body-md">
+<li><a class="text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-all duration-300" href="#">Soil Testing</a></li>
+<li><a class="text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-all duration-300" href="#">Biofertilizers</a></li>
+<li><a class="text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-all duration-300" href="#">Consultancy</a></li>
+<li><a class="text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-all duration-300" href="#">IOT Sensors</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-secondary-fixed">Company</h4>
+<ul class="space-y-4 font-body-md">
+<li><a class="text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-all duration-300" href="#">About Us</a></li>
+<li><a class="text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-all duration-300" href="#">Privacy Policy</a></li>
+<li><a class="text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-all duration-300" href="#">Terms of Service</a></li>
+<li><a class="text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-all duration-300" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-secondary-fixed">Contact</h4>
+<p class="text-sm opacity-70 mb-4">123 Agritech Hub, Sector 5<br/>Bengaluru, India 560001</p>
+<p class="text-sm opacity-70 mb-2">support@soilvital.com</p>
+<p class="font-bold text-data-orange hover:scale-105 transition-transform duration-300 cursor-pointer">+91 98765 43210</p>
+</div>
+</div>
+<div class="border-t border-white/10 py-8 px-margin-desktop max-w-max-width mx-auto">
+<p class="text-xs opacity-50 text-center font-body-md">
+            © 2024 SoilVital Agritech Solutions. Nurturing the Earth through Precision Science.
+        </p>
+</div>
+</footer>
+<div class="fixed bottom-8 right-8 flex flex-col gap-4 z-40">
+<a class="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300 group" href="#">
+<svg class="w-8 h-8 fill-current group-hover:rotate-12 transition-transform duration-300" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.938 3.659 1.432 5.633 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
+<button class="btn-shimmer text-white px-6 py-3 rounded-xl font-bold shadow-2xl flex items-center gap-2 hover:translate-y-[-4px] hover:shadow-[0_20px_40px_rgba(255,107,0,0.4)] transition-all duration-300" onclick="toggleModal('lead-popup')">
+<span class="material-symbols-outlined animate-pulse">analytics</span> Book Soil Test
+    </button>
+</div>
+<!-- Lead Capture Popup -->
+<div class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4 transition-all duration-500 ease-in-out" id="lead-popup">
+<div class="bg-white rounded-2xl max-w-lg w-full p-8 relative shadow-2xl scale-95 opacity-0 transition-all duration-300" id="lead-popup-content">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors duration-300" onclick="toggleModal('lead-popup')">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="text-center mb-8">
+<div class="w-16 h-16 bg-primary-fixed-dim rounded-full flex items-center justify-center mx-auto mb-4 animate-float">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<h3 class="font-headline-lg text-2xl text-primary mb-2">Get Started with SoilVital</h3>
+<p class="text-on-surface-variant">Fill in your details and our expert will call you for a sample collection slot.</p>
+</div>
+<form class="space-y-4">
+<div>
+<label class="block text-sm font-bold text-on-surface mb-1">Full Name</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-tech-blue focus:ring-1 focus:ring-tech-blue outline-none transition-all duration-300" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-on-surface mb-1">Phone Number</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-tech-blue focus:ring-1 focus:ring-tech-blue outline-none transition-all duration-300" placeholder="+91 00000 00000" type="tel"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-on-surface mb-1">Location / District</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-tech-blue focus:ring-1 focus:ring-tech-blue outline-none transition-all duration-300" placeholder="Enter your area" type="text"/>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold mt-4 hover:bg-primary-container hover:shadow-lg transition-all duration-300" type="submit">Submit Request</button>
+</form>
+<p class="text-[10px] text-center mt-6 text-on-surface-variant opacity-60">By submitting, you agree to our Terms and Privacy Policy.</p>
+</div>
+</div>
+<script>
+    function toggleModal(id) {
+        const modal = document.getElementById(id);
+        const content = document.getElementById(id + '-content');
+        if (modal.classList.contains('hidden')) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => {
+                if(content) {
+                    content.classList.remove('scale-95', 'opacity-0');
+                    content.classList.add('scale-100', 'opacity-100');
+                }
+            }, 10);
+        } else {
+            if(content) {
+                content.classList.add('scale-95', 'opacity-0');
+                content.classList.remove('scale-100', 'opacity-100');
+            }
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+    }
+
+    // Auto-show popup after 10 seconds
+    setTimeout(() => {
+        if (!localStorage.getItem('popupShown')) {
+            toggleModal('lead-popup');
+            localStorage.setItem('popupShown', 'true');
+        }
+    }, 10000);
+
+    // Intersection Observer for reveal animations
+    const revealObserverOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                
+                // Trigger report bar animation if this is the report section
+                const bars = entry.target.querySelectorAll('.report-bar');
+                bars.forEach(bar => {
+                    const width = bar.parentElement.previousElementSibling.querySelector('.font-data-display').innerText;
+                    if(width === 'High') bar.style.width = '90%';
+                    if(width === 'Medium') bar.style.width = '65%';
+                    if(width === 'Low') bar.style.width = '20%';
+                });
+            }
+        });
+    }, revealObserverOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => {
+        revealObserver.observe(el);
+    });
+
+    // Subtle Parallax for Hero Background
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const heroBg = document.getElementById('hero-bg');
+        if (heroBg) {
+            heroBg.style.transform = `translateY(${scrolled * 0.3}px) scale(1.1)`;
+        }
+        
+        // Sticky Header shrink effect
+        const header = document.querySelector('header');
+        if (scrolled > 50) {
+            header.classList.add('py-2', 'bg-surface/95', 'shadow-sm');
+            header.querySelector('nav').classList.remove('py-4');
+            header.querySelector('nav').classList.add('py-2');
+        } else {
+            header.classList.remove('py-2', 'bg-surface/95', 'shadow-sm');
+            header.querySelector('nav').classList.add('py-4');
+            header.querySelector('nav').classList.remove('py-2');
+        }
+    });
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+</body></html>

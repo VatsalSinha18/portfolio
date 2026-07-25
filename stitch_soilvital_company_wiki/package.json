@@ -1,0 +1,16 @@
+﻿{
+  "name": "soilvital-company-wiki-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deployable SoilVital website backend with lead capture API.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node --check server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {}
+}
